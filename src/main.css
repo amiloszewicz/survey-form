@@ -2,11 +2,13 @@ body {
   background-color: #A8D6D0;
 }
 
+/* HEADER */
 #title {
   text-align: center;
   font-family: 'Raleway', Helvetica, sans-serif;
 }
 
+/* FORM BOARD*/
 #form_board {
   background-color: #FAFAFA;
   width: 75%;
