@@ -1,8 +1,17 @@
 body {
-  background-color: aqua;
+  background-color: #A8D6D0;
 }
 
 #title {
   text-align: center;
   font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+#form_board {
+  background-color: #FAFAFA;
+  width: 75%;
+  max-width: 1000px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding-top: 20px; 
 }
