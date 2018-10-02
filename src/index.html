@@ -1,19 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <title>Survey Form</title>
-    <link rel="stylesheet" type="text/css" href="main.css">
-    <!-- font -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <meta charset="utf-8">
+  <title>Survey Form</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+  <!-- font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
+
 <body>
-    <header>
-      <h1 id="title">Survey Form</h1>
-    </header>
-    <main id="form_board">
-      <p id="description">Let us know how we can improve freeCodeCamp</p>
-    </main>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <header>
+    <h1 id="title">Survey Form</h1>
+  </header>
+  <main id="form_board">
+    <p id="description">Let us know how we can improve freeCodeCamp</p>
+    <form id="survey-form">
+      <div class="row">
+        <label for="name" class="form_question priv_info_input">* Name:</label>
+        <input id="name" placeholder="Enter your name">
+        <label for="email" class="form_question priv_info_input">* Email:</label>
+        <input id="email" placeholder="Enter your Email">
+        <label for="number" class="form_question priv_info_input">* Age:</label>
+        <input id="number" placeholder="Age">
+      </div>
+      <div class="row">
+        <label class="form_question">Which option best describes your current role?</label>
+        <select>
+          <option>Student</option>
+          <option>Full time job</option>
+          <option>Full time learner</option>
+          <option>Prefer not to say</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="form_question">* How likely is that you would recommend freeCodeCamp to a friend?</label>
+        <div class="form_answer">
+          <ul class="user_rating">
+            <li>
+              <input type="radio">
+              <label>Definitely</label>
+            </li>
+            <li>
+              <input type="radio">
+              <label>Maybe</label>
+            </li>
+            <li>
+              <input type="radio">
+              <label>Not sure</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <label class="form_question">What do you like most in FCC:</label>
+        <select>
+          <option>Challenges</option>
+          <option>Projects</option>
+          <option>Community</option>
+          <option>Open source</option>
+        </select>
+      </div>
+      <div class="row">
+        <label class="form_question">Things that should be improved in the future (Check all that apply):</label>
+        <div class="form_answer">
+          <ul class="user_rating">
+            <li>
+              <input type="checkbox" class="user_ratings">
+              <label>Front-end Projects</label>
+            </li>
+            <li>
+              <input type="checkbox" class="userRatings">
+              <label>Back-end Projects</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Data Visualization</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Challenges</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Open Source Community</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Gitter help rooms</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Videos</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>City Meetups</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Wiki</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Forum</label>
+            </li>
+            <li>
+              <input type="checkbox">
+              <label>Additional Courses</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <label class="form_question">Any Comments or Suggestions?</label>
+        <textarea rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="row submit_btn_container">
+        <button id="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
+
 </html>
