@@ -30,8 +30,8 @@ body {
 
 #survey-form {
   display: grid;
-  grid-gap: 25px;
-  width: 700px;
+  grid-gap: 35px;
+  width: 800px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,12 +39,7 @@ body {
 .row {
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: 350px 250px;
-}
-
-.submit_btn_container {
-  margin-left: auto;
-  margin-right: auto;
+  grid-template-columns: 350px 280px;
 }
 
 .form_question {
@@ -61,6 +56,18 @@ body {
   grid-column: 2 / 3;
 }
 
+.styled_select {
+  height: 35px;
+}
+
+#dropdown {
+  border: 1px solid #c0c0c0;;
+  border-radius: 2px;
+  font-size: 14px;
+  height: 40px;
+  padding: 5px;
+}
+
 input {
   padding: 8px;
   border-style: none;
@@ -74,16 +81,18 @@ input {
   margin: 0px;
 }
 
-.user_rating>li {
+.user_rating li {
   margin-bottom: 10px;
 }
 
-#submit {
+.submit_btn_container {
   margin-left: auto;
   margin-right: auto;
-  grid-column: 1 / 3;
-  margin: 20px auto 30px auto;
-  padding: 15px 22px;
+}
+
+#submit {
+  margin-bottom: 30px;
+  padding: 13px 25px;
   background-color: #5aabdf;
   color: white;
   font-size: 18px;

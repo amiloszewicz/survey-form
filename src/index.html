@@ -24,9 +24,10 @@
         <label for="number" class="form_question priv_info_input">* Age:</label>
         <input id="number" placeholder="Age">
       </div>
-      <div class="row">
+      <div class="row styled_select">
         <label class="form_question">Which option best describes your current role?</label>
-        <select>
+        <select id="dropdown">
+          <option selected disabled>Select an Option</option>
           <option>Student</option>
           <option>Full time job</option>
           <option>Full time learner</option>
@@ -53,9 +54,10 @@
           </ul>
         </div>
       </div>
-      <div class="row">
+      <div class="row styled_select">
         <label class="form_question">What do you like most in FCC:</label>
-        <select>
+        <select id="dropdown">
+          <option selected disabled>Select an Option</option>
           <option>Challenges</option>
           <option>Projects</option>
           <option>Community</option>
@@ -117,7 +119,7 @@
         <label class="form_question">Any Comments or Suggestions?</label>
         <textarea rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
       </div>
-      <div class="row submit_btn_container">
+      <div class="submit_btn_container">
         <button id="submit">Submit</button>
       </div>
     </form>
