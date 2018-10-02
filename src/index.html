@@ -17,12 +17,12 @@
     <p id="description">Let us know how we can improve freeCodeCamp</p>
     <form id="survey-form">
       <div class="row">
-        <label for="name" class="form_question priv_info_input">* Name:</label>
-        <input id="name" placeholder="Enter your name">
-        <label for="email" class="form_question priv_info_input">* Email:</label>
-        <input id="email" placeholder="Enter your Email">
-        <label for="number" class="form_question priv_info_input">* Age:</label>
-        <input id="number" placeholder="Age">
+        <label id="name-label" for="name" class="form_question priv_info_input">* Name:</label>
+        <input id="name" placeholder="Enter your name" type="text" name="priv_info">
+        <label id="email-label" for="email" class="form_question priv_info_input">* Email:</label>
+        <input id="email" placeholder="Enter your Email" type="email" name="priv_info">
+        <label id="number-label" for="number" class="form_question priv_info_input">* Age:</label>
+        <input id="number" placeholder="Age" type="number" name="priv_info">
       </div>
       <div class="row styled_select">
         <label class="form_question">Which option best describes your current role?</label>
@@ -40,16 +40,16 @@
         <div class="form_answer">
           <ul class="user_rating">
             <li>
-              <input type="radio">
-              <label>Definitely</label>
+              <input type="radio" id="definitely" name="recomend_to_friend">
+              <label for="definitely">Definitely</label>
             </li>
             <li>
-              <input type="radio">
-              <label>Maybe</label>
+              <input type="radio" id="maybe" name="recomend_to_friend">
+              <label for="maybe">Maybe</label>
             </li>
             <li>
-              <input type="radio">
-              <label>Not sure</label>
+              <input type="radio" id="not_sure" name="recomend_to_friend">
+              <label for="not_sure">Not sure</label>
             </li>
           </ul>
         </div>
@@ -69,47 +69,47 @@
         <div class="form_answer">
           <ul class="user_rating">
             <li>
-              <input type="checkbox" class="user_ratings">
+              <input type="checkbox" name="things_to_improve">
               <label>Front-end Projects</label>
             </li>
             <li>
-              <input type="checkbox" class="userRatings">
+              <input type="checkbox" name="things_to_improve">
               <label>Back-end Projects</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Data Visualization</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Challenges</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Open Source Community</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Gitter help rooms</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Videos</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>City Meetups</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Wiki</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Forum</label>
             </li>
             <li>
-              <input type="checkbox">
+              <input type="checkbox" name="things_to_improve">
               <label>Additional Courses</label>
             </li>
           </ul>
@@ -117,7 +117,7 @@
       </div>
       <div class="row">
         <label class="form_question">Any Comments or Suggestions?</label>
-        <textarea rows="4" cols="50" placeholder="Enter your comment here..."></textarea>
+        <textarea rows="4" cols="50" name="comment" placeholder="Enter your comment here..."></textarea>
       </div>
       <div class="submit_btn_container">
         <button id="submit">Submit</button>
