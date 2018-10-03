@@ -15,7 +15,7 @@
   </header>
   <main id="form_board">
     <p id="description">Let us know how we can improve freeCodeCamp</p>
-    <form id="survey-form">
+    <form id="survey-form" novalidate>
       <div class="row">
         <label id="name-label" for="name" class="form_question priv_info_input">* Name:</label>
         <input id="name" placeholder="Enter your name" type="text" name="priv_info">
@@ -27,7 +27,6 @@
       <div class="row styled_select">
         <label class="form_question">Which option best describes your current role?</label>
         <select id="dropdown">
-          <option selected disabled>Select an Option</option>
           <option>Student</option>
           <option>Full time job</option>
           <option>Full time learner</option>
@@ -120,11 +119,12 @@
         <textarea rows="4" cols="50" name="comment" placeholder="Enter your comment here..."></textarea>
       </div>
       <div class="submit_btn_container">
-        <button id="submit">Submit</button>
+        <button id="submit" type="submit">Submit</button>
       </div>
     </form>
   </main>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+  <script src="main.js"></script>
 </body>
 
 </html>
