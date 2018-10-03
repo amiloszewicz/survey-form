@@ -15,14 +15,14 @@
   </header>
   <main id="form_board">
     <p id="description">Let us know how we can improve freeCodeCamp</p>
-    <form id="survey-form" novalidate>
+    <form id="survey-form">
       <div class="row">
         <label id="name-label" for="name" class="form_question priv_info_input">* Name:</label>
         <input id="name" placeholder="Enter your name" type="text" name="priv_info">
         <label id="email-label" for="email" class="form_question priv_info_input">* Email:</label>
         <input id="email" placeholder="Enter your Email" type="email" name="priv_info">
         <label id="number-label" for="number" class="form_question priv_info_input">* Age:</label>
-        <input id="number" placeholder="Age" type="number" name="priv_info">
+        <input id="number" placeholder="Age" type="number" name="priv_info"  min="1" max="125">
       </div>
       <div class="row styled_select">
         <label class="form_question">Which option best describes your current role?</label>
