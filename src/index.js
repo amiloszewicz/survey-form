@@ -1,7 +1,20 @@
 import style from "./main.css";
 
-console.log(`I'm a silly entry point`);
+const submitFormButton = document.getElementById("submit");
 
-const arr = [1, 2, 3];
-const iAmJavascriptES6 = () => console.log(...arr);
-window.iAmJavascriptES6 = iAmJavascriptES6;
+const checkEmail = event => {
+  event.stopImmediatePropagation();
+  alert("aaa");
+  const email = document.getElementById("email");
+  const emailRegex = /.+\@.+\..+/;
+
+  if (!emailRegex.test(email.value)) {
+    console.log("wrong email");
+    event.stopPropagation();
+  } else {
+    console.log("succes");
+    return true;
+  }
+};
+
+submitFormButton.addEventListener("click", checkEmail, false);
