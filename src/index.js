@@ -1,20 +1,23 @@
 import style from "./main.css";
 
-const submitFormButton = document.getElementById("submit");
+// const submitFormButton = document.getElementById("submit");
 
-const checkEmail = event => {
-  event.stopImmediatePropagation();
-  alert("aaa");
-  const email = document.getElementById("email");
-  const emailRegex = /.+\@.+\..+/;
+// const checkEmail = event => {
+//   const email = document.getElementById("email");
+//   const emailRegex = /.+\@.+\..+/;
 
-  if (!emailRegex.test(email.value)) {
-    console.log("wrong email");
-    event.stopPropagation();
-  } else {
-    console.log("succes");
-    return true;
-  }
-};
+//   event.stopImmediatePropagation();
 
-submitFormButton.addEventListener("click", checkEmail, false);
+//   if (!emailRegex.test(email.value)) {
+//     const wrongEmail = document.createElement('span');
+
+//     wrongEmail.innerText = 'wrong email';
+//     wrongEmail.className = 'form_answer';
+//     email.insertAdjacentElement('afterend', wrongEmail);
+//     event.preventDefault();
+//   } else {
+//     console.log("succes");
+//   }
+// };
+
+// submitFormButton.addEventListener("click", checkEmail, false);
