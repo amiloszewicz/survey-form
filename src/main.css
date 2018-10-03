@@ -60,7 +60,7 @@ body {
   height: 35px;
 }
 
-#dropdown {
+.select_dropdown {
   border: 1px solid #c0c0c0;;
   border-radius: 2px;
   font-size: 14px;
